@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+.container{
+    margin: 0 auto;
+}
+.wrapper{
+    max-width: 960px;
+    display: grid;
+    margin: 5em 1em;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    padding: 17%;
+}
+.card1{
+    background-color: hsl(31, 77%, 52%);
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+}
+img{
+    margin-bottom: 1.5em;
+}
+h1{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+}
+p{
+    color : hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    font-size: 15px;
+    margin-bottom: 5em;
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    outline: none;
+    min-width: 67%;
+}
+.card1 button{
+    color : hsl(31, 77%, 52%);
+}
+.card2 button{
+    color: hsl(184, 100%, 22%);
+}
+.card3 button{
+    color : hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width : 426px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        padding: 20%;
+    }
+    p{
+        margin-bottom: 1.5em;
+    }
+}
